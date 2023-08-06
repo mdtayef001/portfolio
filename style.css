@@ -17,12 +17,21 @@ a {
 }
 #mincircle {
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
-  width: 10px;
-  height: 10px;
+  width: 11px;
+  height: 11px;
   position: absolute;
   border-radius: 50%;
   z-index: 999;
   background-color: white;
+}
+
+.bounding {
+  width: fit-content;
+  overflow: hidden;
+}
+
+.boundingelem {
+  transform: translatey(100%);
 }
 
 #main {
@@ -166,8 +175,7 @@ i {
 
 .elem img {
   opacity: 0;
-
-  height: 140%;
+  height: 180%;
   z-index: 999;
   position: absolute;
 }
